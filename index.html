@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
    <div class="flex-container-column card">
        <div class="display">
-           <h1 id="hasil">0</h1>
+           <h1 id="displayNumber">0</h1>
        </div>
        <div class="flex-container-row">
            <div class="tombol">7</div>
@@ -37,6 +37,22 @@
        </div>
    </div>
 
+   <div class="history card">
+       <h2>Riwayat Perhitungan</h2>
+       <table>
+           <thead>
+               <tr>
+                   <th>Angka Pertama</th>
+                   <th>Operator</th>
+                   <th>Angka Kedua</th>
+                   <th>Hasil</th>
+               </tr>
+           </thead>
+           <tbody id="historyList"></tbody>
+       </table>
+   </div>
+
+   <script src="assets/storage.js"></script>
    <script src="assets/kalkulator.js"></script>
 </body>
 
